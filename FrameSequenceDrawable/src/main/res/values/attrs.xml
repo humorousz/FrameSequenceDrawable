@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatedImageView">
+        <attr name="loopCount" format="integer"/>
+        <attr name="loopBehavior">
+            <flag name="loop_finite" value="1"/>
+            <flag name="loop_inf" value="2"/>
+            <flag name="loop_default" value="3"/>
+
+        </attr>
+    </declare-styleable>
+</resources>
