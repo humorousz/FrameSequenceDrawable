@@ -36,7 +36,7 @@ public void setImage(){
     mGoogleImage.setImageURI(uri);
 }
 ```
-#### 当然你也可以不使用我这里的AnimatedImageView，AnimatedImageView是我参考其它的代码后修改封装的类，直接使用FrameSequence+ImageView也是可以的，使用方法如下
+#### 当然你也可以不使用我这里的AnimatedImageView，AnimatedImageView是我参考其它的代码后修改封装的类，直接使用FrameSequenceDrawable+ImageView也是可以的，使用方法如下
 ``` java
  ImageView mImage;
  InputStream in = null;
