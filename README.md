@@ -1,6 +1,25 @@
 # FrameSequenceDrawable
 ## 介绍
-Google提供的可以播放WebP动画的Drawable,代码基本都是从源码中拷出来的，使用到的so库也是从网上找到的，写这个的目的是为了理解这个思想，可以通过替换FrameSequence来使用第三方解析引擎，比如可以使用facebook的Fresco中用于解析webp的lib，[Google-FrameSequenceDrawable-相关源码](https://android.googlesource.com/platform/frameworks/ex/+/refs/heads/master/framesequence)
+Google提供的可以播放WebP动画的Drawable,代码都是从源码中拷出来的，使用到的so库也是从网上找到的，为了方便，将代码单独建立了lib工程并且放到了jitpack上,写这个的目的是为了学习大牛的思想，了解了原理后可以通过替换FrameSequence来使用第三方解析引擎WebP资源，比如可以使用facebook的Fresco中用于解析webp的lib，[Google-FrameSequenceDrawable-相关源码](https://android.googlesource.com/platform/frameworks/ex/+/refs/heads/master/framesequence)
+
+## 如何引入到工程
+-  Add the JitPack repository to your build file
+``` gradle
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+- Add the dependency
+ ``` gradle
+	dependencies {
+	        compile 'com.github.humorousz:FrameSequenceDrawable:1.0.1-SNAPSHOT'
+	}
+
+ ```
 ## 如何使用
 - xml
 ``` xml
